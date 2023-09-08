@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { HiMenuAlt3 } from "react-icons/hi";
+import { HiMenuAlt3, HiX } from "react-icons/hi";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -32,17 +32,34 @@ export default function Navbar() {
       <div className="sm:hidden col-span-1 flex justify-end">
         <div
           className={`${
-            isOpen === true
+            isOpen === false
               ? "w-12 h-12 rounded-full"
-              : "w-full h-24 rounded-lg"
+              : "w-full h-auto rounded-lg shadow-lg px-4 py-2"
           } bg-warna1 flex justify-center items-center cursor-pointer z-10 duration-150`}
           onClick={handleMenu}
         >
-          <HiMenuAlt3
-            color="black"
-            size="35px"
-            className={isOpen === true ? "visible" : "hidden"}
-          />
+          {isOpen === false ? (
+            <HiMenuAlt3
+              color="black"
+              size="25px"
+              className="active:animate-spin"
+            />
+          ) : (
+            <div className="w-full h-full">
+              <div className="flex justify-end">
+                <HiX
+                  color="black"
+                  size="25px"
+                  className="active:animate-spin"
+                />
+              </div>
+              <ul className="list-none font-semibold text-bgHome divide-y-2 divide-warna3/25 w-full">
+                <li>About</li>
+                <li>Projects</li>
+                <li>Contacts</li>
+              </ul>
+            </div>
+          )}
         </div>
       </div>
     </div>
