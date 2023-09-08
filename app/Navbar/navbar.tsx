@@ -35,14 +35,14 @@ export default function Navbar() {
             isOpen === false
               ? "w-12 h-12 rounded-full"
               : "w-full h-auto rounded-lg shadow-lg px-4 py-2"
-          } bg-warna1 flex justify-center items-center cursor-pointer z-10 duration-150`}
-          onClick={handleMenu}
+          } bg-warna1 flex justify-center items-center z-10 duration-150`}
         >
           {isOpen === false ? (
             <HiMenuAlt3
               color="black"
               size="25px"
               className="active:animate-spin"
+              onClick={handleMenu}
             />
           ) : (
             <div className="w-full h-full">
@@ -51,6 +51,7 @@ export default function Navbar() {
                   color="black"
                   size="25px"
                   className="active:animate-spin"
+                  onClick={handleMenu}
                 />
               </div>
               <ul className="list-none text-lg font-semibold text-bgHome divide-y-2 divide-warna3/25 w-full ">
