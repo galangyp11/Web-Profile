@@ -53,10 +53,10 @@ export default function Navbar() {
                   className="active:animate-spin"
                 />
               </div>
-              <ul className="list-none font-semibold text-bgHome divide-y-2 divide-warna3/25 w-full">
-                <li>About</li>
-                <li>Projects</li>
-                <li>Contacts</li>
+              <ul className="list-none text-lg font-semibold text-bgHome divide-y-2 divide-warna3/25 w-full ">
+                <li className="py-2">About</li>
+                <li className="py-2">Projects</li>
+                <li className="py-2">Contacts</li>
               </ul>
             </div>
           )}
