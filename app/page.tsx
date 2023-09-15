@@ -16,22 +16,22 @@ export default function Home() {
         <div className="w-full h-full ">
           <HomePage />
         </div>
-        <div className="w-full p-0 h-0 ">
+        <div className="md:w-full md:p-0 md:h-0 my-4">
           <Image src={garisHome} alt="garis pembatas" />
         </div>
         <div
-          className="w-full h-screen flex align-center items-center"
+          className="w-full md:h-screen h-full flex align-center items-center"
           id="about"
         >
           {/* <h1 className="text-warna3 text-5xl font-bold">01 ABOUT</h1> */}
           <About />
         </div>
-        <div className="w-full p-0 h-0 mb-6">
+        <div className="md:w-full md:p-0 md:h-0 md:mb-6">
           <Image src={garisHome} alt="garis pembatas" />
         </div>
         <div
           className="w-full h-screen flex align-center items-center"
-          id="about"
+          id="projects"
         >
           {/* <h1 className="text-warna3 text-5xl font-bold">01 ABOUT</h1> */}
           <Projects />
