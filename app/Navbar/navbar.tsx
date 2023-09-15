@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React, { useState } from "react";
 import { HiMenuAlt3, HiX } from "react-icons/hi";
 
@@ -15,9 +16,12 @@ export default function Navbar() {
         </p>
       </div>
       <div className="sm:block sm:col-span-1 hidden">
-        <p className="text-center font-medium text-lg text-warna4 cursor-pointer py-1">
+        <Link
+          href="#about"
+          className="text-center font-medium text-lg text-warna4 cursor-pointer py-1"
+        >
           About
-        </p>
+        </Link>
       </div>
       <div className="sm:block hidden">
         <p className="text-center font-medium text-lg text-warna4 cursor-pointer py-1">
