@@ -11,11 +11,15 @@ export default function Navbar() {
     setIsOpen(!isOpen);
   };
   return (
-    <div className="grid sm:grid-cols-8 grid-cols-2 w-full h-20 py-6 bg-bgHome/30 backdrop-blur-sm">
+    <div className="grid sm:grid-cols-8 grid-cols-2 w-full h-20 p-6 sm:px-0 bg-bgHome/30 backdrop-blur-sm">
       <div className="sm:col-span-5 col-span-1">
-        <p className="sm:text-5xl text-3xl font-semibold text-warna1 cursor-pointer">
+        <Link
+          href="/"
+          onClick={() => setIsOpen(false)}
+          className="sm:text-5xl text-3xl font-semibold text-warna1 cursor-pointer"
+        >
           GYP
-        </p>
+        </Link>
       </div>
       <div className="sm:flex sm:justify-center sm:block sm:col-span-1 hidden">
         <Link
