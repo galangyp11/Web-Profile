@@ -76,7 +76,11 @@ export default function Navbar() {
                     Projects
                   </Link>
                 </li>
-                <li className="py-2">Contacts</li>
+                <li className="py-2">
+                  <Link href="#projects" className="py-2" onClick={handleMenu}>
+                    Contacts
+                  </Link>
+                </li>
               </ul>
             </div>
           )}

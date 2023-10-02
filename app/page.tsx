@@ -17,7 +17,7 @@ export default function Home() {
           <Image src={garisHome} alt="garis pembatas" />
         </div>
         <div
-          className="w-full md:h-screen h-fit sm:h-full flex align-center items-center"
+          className="w-full md:h-screen py-36 sm:py-0 h-fit sm:h-full flex align-center items-center"
           id="about"
         >
           <About />
@@ -26,7 +26,7 @@ export default function Home() {
           <Image src={garisHome} alt="garis pembatas" />
         </div>
         <div
-          className="w-full h-fit my-16 sm:my-10 flex align-center items-center"
+          className="w-full h-fit my-16 py-36 sm:py-0 sm:my-10 flex align-center items-center"
           id="projects"
         >
           <Projects />
@@ -35,7 +35,7 @@ export default function Home() {
           <Image src={garisHome} alt="garis pembatas" />
         </div>
         <div
-          className="w-full md:h-screen h-fit sm:h-full flex align-center items-center"
+          className="w-full md:h-screen py-36 sm:py-0 h-fit sm:h-full flex align-center items-center"
           id="contacts"
         >
           <Contacts />
