@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function Homepage() {
   return (
     <div className=" sm:grid sm:grid-cols-2 flex flex-col h-full sm:py-24">
-      <div className="sm:block hidden w-full h-full sm:py-28 z-10">
+      <div className="sm:block hidden w-full h-full sm:py-28 ">
         <p className="text-warna2 text-3xl font-medium">Hi, I&apos;m</p>
         <p className="text-warna1 text-5xl font-semibold">Galang Yudi Putra</p>
       </div>

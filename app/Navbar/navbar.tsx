@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import React, { useState } from "react";
 import { HiMenuAlt3, HiX } from "react-icons/hi";
@@ -9,13 +11,13 @@ export default function Navbar() {
     setIsOpen(!isOpen);
   };
   return (
-    <div className="grid sm:grid-cols-8 grid-cols-2 w-full h-20 py-6">
+    <div className="grid sm:grid-cols-8 grid-cols-2 w-full h-20 py-6 bg-bgHome/30 backdrop-blur-sm">
       <div className="sm:col-span-5 col-span-1">
         <p className="sm:text-5xl text-3xl font-semibold text-warna1 cursor-pointer">
           GYP
         </p>
       </div>
-      <div className="sm:block sm:col-span-1 hidden">
+      <div className="sm:flex sm:justify-center sm:block sm:col-span-1 hidden">
         <Link
           href="#about"
           className="text-center font-medium text-lg text-warna4 cursor-pointer py-1"
@@ -23,15 +25,20 @@ export default function Navbar() {
           About
         </Link>
       </div>
-      <div className="sm:block hidden">
-        <p className="text-center font-medium text-lg text-warna4 cursor-pointer py-1">
+      <div className="sm:block hidden sm:flex sm:justify-center">
+        <Link
+          href="#projects"
+          className="text-center font-medium text-lg text-warna4 cursor-pointer py-1"
+        >
           Projects
-        </p>
+        </Link>
       </div>
-      <div className="flex justify-center sm:block hidden">
-        <button className="w-[7.2rem] h-[2.5rem] bg-warna1 px-2 py-1 rounded-full text-warna3 font-semibold hover:scale-110 duration-300">
-          Contacts
-        </button>
+      <div className="sm:flex sm:justify-center sm:block hidden">
+        <Link href="#contacts">
+          <button className="w-[7.2rem] h-[2.5rem] bg-warna1 px-2 py-1 rounded-full text-warna3 font-semibold hover:scale-110 duration-300">
+            Contacts
+          </button>
+        </Link>
       </div>
       <div className="sm:hidden col-span-1 flex justify-end">
         <div
@@ -60,12 +67,12 @@ export default function Navbar() {
               </div>
               <ul className="list-none text-lg font-semibold text-bgHome divide-y-2 divide-warna3/25 w-full ">
                 <li className="py-2">
-                  <Link href="#about" className="py-2">
+                  <Link href="#about" className="py-2" onClick={handleMenu}>
                     About
                   </Link>
                 </li>
                 <li className="py-2">
-                  <Link href="#projects" className="py-2">
+                  <Link href="#projects" className="py-2" onClick={handleMenu}>
                     Projects
                   </Link>
                 </li>
