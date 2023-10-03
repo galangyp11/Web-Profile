@@ -12,12 +12,10 @@ export default function ProjectBDI() {
           Baca Dongeng Indonesia
         </p>
         <p className="text-warna4 hidden sm:block">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate,
-          architecto non atque, ad laborum delectus asperiores eaque voluptas
-          voluptatem nesciunt harum? Quo labore, dicta alias ipsum animi sunt at
-          magnam repellat quasi deserunt obcaecati numquam assumenda id cumque
-          accusantium sapiente libero maiores adipisci quibusdam tempore sed.
-          Recusandae numquam veniam iure?
+          Sebuah website yang menampilkan kumpulan dongeng-dongeng dibuat
+          menggunakan React JS + Bootstrap dan Node JS + MySQL. Website ini
+          memiliki animasi dan suara yang membuat membaca dongeng menjadi lebih
+          menarik.
         </p>
       </div>
       <div className="hidden sm:block sm:h-fit">
@@ -52,12 +50,10 @@ export default function ProjectBDI() {
       </div>
       <div className="text-warna4 sm:hidden">
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate,
-          architecto non atque, ad laborum delectus asperiores eaque voluptas
-          voluptatem nesciunt harum? Quo labore, dicta alias ipsum animi sunt at
-          magnam repellat quasi deserunt obcaecati numquam assumenda id cumque
-          accusantium sapiente libero maiores adipisci quibusdam tempore sed.
-          Recusandae numquam veniam iure?
+          Sebuah website yang menampilkan kumpulan dongeng-dongeng dibuat
+          menggunakan React JS + Bootstrap dan Node JS + MySQL. Website ini
+          memiliki animasi dan suara yang membuat membaca dongeng menjadi lebih
+          menarik.
         </p>
       </div>
     </div>

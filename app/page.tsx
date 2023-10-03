@@ -13,7 +13,7 @@ export default function Home() {
         <div className="w-full h-full ">
           <HomePage />
         </div>
-        <div className="h-4 md:w-full md:p-0 md:h-0 my-4 border-2">
+        <div className="h-4 md:w-full md:p-0 md:h-0 my-4">
           <Image src={garisHome} alt="garis pembatas" />
         </div>
         <div
