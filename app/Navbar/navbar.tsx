@@ -1,17 +1,39 @@
 "use client";
 
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useState, Dispatch, SetStateAction, useEffect } from "react";
 import { HiMenuAlt3, HiX } from "react-icons/hi";
+import { MdLightMode } from "react-icons/md";
+import { MdNightlightRound } from "react-icons/md";
+import { ThemeColorType } from "../page";
 
-export default function Navbar() {
+type SetThemeColorType = {
+  themeColor: ThemeColorType;
+  setThemeColor: Dispatch<SetStateAction<ThemeColorType>>;
+};
+
+export default function Navbar({
+  setThemeColor,
+  themeColor,
+}: SetThemeColorType) {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleMenu = () => {
     setIsOpen(!isOpen);
   };
+
+  const handleTheme = () => {
+    setThemeColor({ status: !themeColor.status });
+    console.log(themeColor);
+  };
   return (
-    <div className="grid sm:grid-cols-8 grid-cols-2 w-full h-20 p-6 sm:px-0 bg-bgHome/30 backdrop-blur-sm">
+    <div
+      className={`${
+        themeColor.status === true ? `bg-bgHome/30` : `bg-bgLight/60`
+      }
+            grid sm:grid-cols-9 grid-cols-2 w-full h-20 p-6 sm:px-0 backdrop-blur-sm
+      `}
+    >
       <div className="sm:col-span-5 col-span-1">
         <Link
           href="/"
@@ -20,6 +42,23 @@ export default function Navbar() {
         >
           GYP
         </Link>
+      </div>
+      <div className="sm:flex sm:justify-center sm:block sm:col-span-1 hidden">
+        {themeColor.status === true ? (
+          <MdLightMode
+            size="30"
+            color="#F9F8DF"
+            onClick={handleTheme}
+            className="cursor-pointer"
+          />
+        ) : (
+          <MdNightlightRound
+            size="30"
+            color="#F9F8DF"
+            onClick={handleTheme}
+            className="cursor-pointer"
+          />
+        )}
       </div>
       <div className="sm:flex sm:justify-center sm:block sm:col-span-1 hidden">
         <Link

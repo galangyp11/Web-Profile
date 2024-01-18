@@ -7,7 +7,7 @@ import Link from "next/link";
 export default function ProjectBDI() {
   return (
     <div className="sm:grid sm:grid-cols-5 h-fit">
-      <div className=" sm:col-span-2  h-fit w-full">
+      <div className=" sm:col-span-2 h-fit w-full">
         <p className="text-warna1 text-2xl font-semibold sm:mb-4">
           Baca Dongeng Indonesia
         </p>

@@ -17,11 +17,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${inter.className} bg-bgHome`}>
-        <div className="sticky top-0 md:max-w-5xl sm:max-w-4xl md:container sm:mx-auto container">
+      <body className={`${inter.className}`}>
+        {/* <div className="sticky top-0 md:max-w-5xl sm:max-w-4xl md:container sm:mx-auto container">
           <Navbar />
-        </div>
+        </div> */}
         <div>{children}</div>
+        {/* <div className="sticky bottom-0 border-warna1 w-full md:h-fit py-36 sm:py-0 sm:h-fit flex align-center items-center">
+          <Footer />
+        </div> */}
       </body>
     </html>
   );

@@ -1,6 +1,7 @@
 import ProjectBDI from "./Project components/Project-BDI";
 import ProjectSKW from "./Project components/Project-SKW";
 import ProjectBlogNEXT from "./Project components/Project-BlogNEXT";
+import ProjectTopUpDmML from "./Project components/Project-TopUpDmML";
 import React from "react";
 import Link from "next/link";
 import { BiLeftArrow, BiRightArrow } from "react-icons/bi";
@@ -28,6 +29,9 @@ export default function Projects() {
       </div>
       <div>
         <ProjectSKW />
+      </div>
+      <div>
+        <ProjectTopUpDmML />
       </div>
       <div className="flex justify-center">
         <p className="text-sm text-warna2">
