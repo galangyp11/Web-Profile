@@ -3,15 +3,24 @@ import GarisProject from "../../Image/garis-projects.svg";
 import ThumnailBdi from "../../Image/ThumbnailBDI.png";
 import React from "react";
 import Link from "next/link";
+import { ThemeColorType } from "../../page";
 
-export default function ProjectBDI() {
+type SetThemeColorType = {
+  themeColor: ThemeColorType;
+};
+
+export default function ProjectBDI({ themeColor }: SetThemeColorType) {
   return (
     <div className="sm:grid sm:grid-cols-5 h-fit">
       <div className=" sm:col-span-2 h-fit w-full">
         <p className="text-warna1 text-2xl font-semibold sm:mb-4">
           Baca Dongeng Indonesia
         </p>
-        <p className="text-warna4 hidden sm:block">
+        <p
+          className={`${
+            themeColor.status === true ? `text-warna4` : `text-warna5`
+          } hidden sm:block`}
+        >
           Sebuah website yang menampilkan kumpulan dongeng-dongeng dibuat
           menggunakan React JS + Bootstrap dan Node JS + MySQL. Website ini
           memiliki animasi dan suara yang membuat membaca dongeng menjadi lebih

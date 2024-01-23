@@ -1,7 +1,7 @@
 // import Navbar from "./Navbar/Navbar(CSR)";
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Contents from "./Contents/Contents";
 import Navbar from "./Navbar/navbar";
 
@@ -14,13 +14,17 @@ export default function Home() {
     status: true,
   });
 
+  useEffect(() => {
+    console.log("pagetsx" + themeColor.status);
+  }, [themeColor]);
+
   return (
-    <div>
-      <div className="sticky top-0 md:max-w-5xl sm:max-w-4xl md:container sm:mx-auto container bg-bgHome ">
+    <div className={themeColor.status === true ? `bg-bgHome` : `bg-bgLight`}>
+      <div className="sticky top-0">
         <Navbar setThemeColor={setThemeColor} themeColor={themeColor} />
       </div>
       <div>
-        <Contents />
+        <Contents themeColor={themeColor} />
       </div>
     </div>
   );

@@ -1,7 +1,12 @@
 import React from "react";
 import { BiLeftArrow, BiRightArrow } from "react-icons/bi";
+import { ThemeColorType } from "../page";
 
-export default function About() {
+type SetThemeColorType = {
+  themeColor: ThemeColorType;
+};
+
+export default function About({ themeColor }: SetThemeColorType) {
   return (
     <div className="grid grid-rows-2 gap-12">
       <div className="flex justify-center items-center">
@@ -20,7 +25,11 @@ export default function About() {
         </div>
       </div>
       <div>
-        <p className="text-warna4 text-xl tracking-wide">
+        <p
+          className={`${
+            themeColor.status === true ? `text-warna4` : `text-warna5`
+          } text-xl tracking-wide`}
+        >
           <span className="text-3xl text-warna1">H</span>alo, perkenalkan saya
           Galang Yudi Putra. Saya merupakan lulusan S1 Universitas Gunadarma
           fakultas Teknik Informatika 2023. Tertarik pada web development

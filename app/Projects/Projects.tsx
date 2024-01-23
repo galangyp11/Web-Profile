@@ -5,8 +5,13 @@ import ProjectTopUpDmML from "./Project components/Project-TopUpDmML";
 import React from "react";
 import Link from "next/link";
 import { BiLeftArrow, BiRightArrow } from "react-icons/bi";
+import { ThemeColorType } from "../page";
 
-export default function Projects() {
+type SetThemeColorType = {
+  themeColor: ThemeColorType;
+};
+
+export default function Projects({ themeColor }: SetThemeColorType) {
   return (
     <div className="grid grid-rows-4 gap-12">
       <div className="flex justify-center items-center">
@@ -25,13 +30,13 @@ export default function Projects() {
         </div>
       </div>
       <div>
-        <ProjectBDI />
+        <ProjectBDI themeColor={themeColor} />
       </div>
       <div>
-        <ProjectSKW />
+        <ProjectSKW themeColor={themeColor} />
       </div>
       <div>
-        <ProjectTopUpDmML />
+        <ProjectTopUpDmML themeColor={themeColor} />
       </div>
       <div className="flex justify-center">
         <p className="text-sm text-warna2">

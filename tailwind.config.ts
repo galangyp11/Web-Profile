@@ -13,6 +13,8 @@ const config: Config = {
       warna2: "#f9f8df",
       warna3: "#2A2A2A",
       warna4: "#F9F8DF",
+      warna5: "#040D12",
+      warna6: "#bfbfbf",
       bgLight: "#F7F7F7",
     },
     extend: {

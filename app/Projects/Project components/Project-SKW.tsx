@@ -3,15 +3,24 @@ import GarisProject from "../../Image/garis-projects.svg";
 import ThumnailSKW from "../../Image/ThumbnailSKW.png";
 import React from "react";
 import Link from "next/link";
+import { ThemeColorType } from "../../page";
 
-export default function ProjectSKW() {
+type SetThemeColorType = {
+  themeColor: ThemeColorType;
+};
+
+export default function ProjectSKW({ themeColor }: SetThemeColorType) {
   return (
     <div className="sm:grid sm:grid-cols-5 h-fit">
       <div className=" sm:col-span-2  h-fit w-full">
         <p className="text-warna1 text-2xl font-semibold sm:mb-4">
           Toko Online SKW
         </p>
-        <p className="text-warna4 hidden sm:block">
+        <p
+          className={`${
+            themeColor.status === true ? `text-warna4` : `text-warna5`
+          } hidden sm:block`}
+        >
           Sebuah website toko online untuk menjadi wadah transaksi pada suatu
           sekolah di jawa tengah. Dibuat menggunakan React JS + Bootstrap dan
           Node JS + MySQL. Terdapat 3 Route pada website ini Pengguna, Penjual,

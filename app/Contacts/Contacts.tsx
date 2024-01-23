@@ -1,7 +1,12 @@
 import Link from "next/link";
 import { BiLeftArrow, BiRightArrow } from "react-icons/bi";
+import { ThemeColorType } from "../page";
 
-export default function Contacts() {
+type SetThemeColorType = {
+  themeColor: ThemeColorType;
+};
+
+export default function Contacts({ themeColor }: SetThemeColorType) {
   return (
     <div className="flex justify-center items-center w-screen h-fit">
       <div className="grid grid-rows-2 gap-12">
@@ -21,18 +26,59 @@ export default function Contacts() {
           </div>
         </div>
 
-        <div className="grid grid-rows-3 ">
+        <div className="grid grid-row-2 justify-center mr-20">
           <div>
-            <p className="text-warna2 text-lg">
-              Email : <span className="text-warna1">galangy11@gmail.com</span>
-            </p>
+            <div className="grid grid-cols-5 w-[15em]">
+              <div className="col-span-2">
+                <p
+                  className={`${
+                    themeColor.status === true ? `text-warna2` : `text-warna5`
+                  } text-lg`}
+                >
+                  Email
+                </p>
+              </div>
+              <div>
+                <p
+                  className={`${
+                    themeColor.status === true ? `text-warna2` : `text-warna5`
+                  } text-lg`}
+                >
+                  :
+                </p>
+              </div>
+              <div className="col-span-2">
+                <p className="text-warna1 text-lg">galangy11@gmail.com</p>
+              </div>
+            </div>
           </div>
+
           <div>
-            <Link href="https://github.com/galangyp11">
-              <p className="text-warna2 text-lg">
-                Github :<span className="text-warna1"> galangyp11</span>
-              </p>
-            </Link>
+            <div className="grid grid-cols-5 w-[15em]">
+              <div className="col-span-2">
+                <Link href="https://github.com/galangyp11">
+                  <p
+                    className={`${
+                      themeColor.status === true ? `text-warna2` : `text-warna5`
+                    } text-lg`}
+                  >
+                    Github
+                  </p>
+                </Link>
+              </div>
+              <div>
+                <p
+                  className={`${
+                    themeColor.status === true ? `text-warna2` : `text-warna5`
+                  } text-lg`}
+                >
+                  :
+                </p>
+              </div>
+              <div className="col-span-2">
+                <p className="text-warna1 text-lg"> galangyp11</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
