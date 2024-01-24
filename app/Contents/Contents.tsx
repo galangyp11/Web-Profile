@@ -44,7 +44,7 @@ export default function Contents({ themeColor }: SetThemeColorType) {
           <Image src={garisHome} alt="garis pembatas" />
         </div>
         <div
-          className="w-full py-24 sm:py-0 h-fit sm:h-screen border flex align-center items-center"
+          className="w-full py-24 sm:py-0 h-fit sm:h-screen flex align-center items-center"
           id="contacts"
         >
           <Contacts themeColor={themeColor} />
