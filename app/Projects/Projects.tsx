@@ -13,8 +13,8 @@ type SetThemeColorType = {
 
 export default function Projects({ themeColor }: SetThemeColorType) {
   return (
-    <div className="grid grid-rows-4 gap-12">
-      <div className="flex justify-center items-center">
+    <div>
+      <div className="flex justify-center items-center h-10 sm:h-auto my-8">
         <div className="grid grid-cols-3">
           <div className=" flex justify-center items-center">
             <BiRightArrow className="text-warna3 text-4xl" />
@@ -29,13 +29,13 @@ export default function Projects({ themeColor }: SetThemeColorType) {
           </div>
         </div>
       </div>
-      <div>
+      <div className="mt-24 mb-12">
         <ProjectBDI themeColor={themeColor} />
       </div>
-      <div>
+      <div className="my-12">
         <ProjectSKW themeColor={themeColor} />
       </div>
-      <div>
+      <div className="my-12">
         <ProjectTopUpDmML themeColor={themeColor} />
       </div>
       <div className="flex justify-center">

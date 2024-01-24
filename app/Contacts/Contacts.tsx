@@ -28,7 +28,7 @@ export default function Contacts({ themeColor }: SetThemeColorType) {
 
         <div className="grid grid-row-2 justify-center mr-20">
           <div>
-            <div className="grid grid-cols-5 w-[15em]">
+            <div className="grid grid-cols-7 w-[15em]">
               <div className="col-span-2">
                 <p
                   className={`${
@@ -38,7 +38,7 @@ export default function Contacts({ themeColor }: SetThemeColorType) {
                   Email
                 </p>
               </div>
-              <div>
+              <div className="col-span-1">
                 <p
                   className={`${
                     themeColor.status === true ? `text-warna2` : `text-warna5`
@@ -47,14 +47,14 @@ export default function Contacts({ themeColor }: SetThemeColorType) {
                   :
                 </p>
               </div>
-              <div className="col-span-2">
+              <div className="col-span-4">
                 <p className="text-warna1 text-lg">galangy11@gmail.com</p>
               </div>
             </div>
           </div>
 
           <div>
-            <div className="grid grid-cols-5 w-[15em]">
+            <div className="grid grid-cols-7 w-[15em]">
               <div className="col-span-2">
                 <Link href="https://github.com/galangyp11">
                   <p
@@ -66,7 +66,7 @@ export default function Contacts({ themeColor }: SetThemeColorType) {
                   </p>
                 </Link>
               </div>
-              <div>
+              <div className="cols-span-1">
                 <p
                   className={`${
                     themeColor.status === true ? `text-warna2` : `text-warna5`
@@ -75,8 +75,8 @@ export default function Contacts({ themeColor }: SetThemeColorType) {
                   :
                 </p>
               </div>
-              <div className="col-span-2">
-                <p className="text-warna1 text-lg"> galangyp11</p>
+              <div className="col-span-4">
+                <p className="text-warna1 text-lg">galangyp11</p>
               </div>
             </div>
           </div>

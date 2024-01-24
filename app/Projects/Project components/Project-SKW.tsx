@@ -60,7 +60,11 @@ export default function ProjectSKW({ themeColor }: SetThemeColorType) {
           </Link>
         </div>
       </div>
-      <div className="text-warna4 sm:hidden">
+      <div
+        className={`${
+          themeColor.status === true ? `text-warna4` : `text-warna5`
+        } sm:hidden`}
+      >
         <p>
           Sebuah website toko online untuk menjadi wadah transaksi pada suatu
           sekolah di jawa tengah. Dibuat menggunakan React JS + Bootstrap dan

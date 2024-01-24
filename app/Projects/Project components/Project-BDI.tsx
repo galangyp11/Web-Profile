@@ -57,7 +57,11 @@ export default function ProjectBDI({ themeColor }: SetThemeColorType) {
           </Link>
         </div>
       </div>
-      <div className="text-warna4 sm:hidden">
+      <div
+        className={`${
+          themeColor.status === true ? `text-warna4` : `text-warna5`
+        } sm:hidden`}
+      >
         <p>
           Sebuah website yang menampilkan kumpulan dongeng-dongeng dibuat
           menggunakan React JS + Bootstrap dan Node JS + MySQL. Website ini

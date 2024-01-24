@@ -19,32 +19,32 @@ export default function Contents({ themeColor }: SetThemeColorType) {
       }sm:overflow-x-hidden`}
     >
       <div className="container flex h-fit sm:min-h-screen md:max-w-5xl sm:max-w-4xl px-8 flex-col items-center justify-between md:container sm:mx-auto">
-        <div className="w-full h-full ">
+        <div className="w-full h-full py-24 sm:py-0">
           <HomePage themeColor={themeColor} />
         </div>
-        <div className="h-4 md:w-full md:p-0 md:h-0 my-4">
+        <div className="h-0">
           <Image src={garisHome} alt="garis pembatas" />
         </div>
         <div
-          className="w-full md:h-screen py-36 sm:py-0 h-fit sm:h-full flex align-center items-center"
+          className="w-full h-fit sm:h-full py-24 sm:py-36 mb-10 sm:py-0 sm:my-10 flex align-center items-center"
           id="about"
         >
           <About themeColor={themeColor} />
         </div>
-        <div className="h-4 md:w-full md:p-0 md:h-0 my-4 md:mb-6">
+        <div className="h-0">
           <Image src={garisHome} alt="garis pembatas" />
         </div>
         <div
-          className="w-full h-fit my-16 py-36 sm:py-0 sm:my-10 flex align-center items-center"
+          className="w-full h-fit sm:h-full py-24 sm:py-36 mb-10 sm:py-0 sm:my-10 flex align-center items-center"
           id="projects"
         >
           <Projects themeColor={themeColor} />
         </div>
-        <div className="h-4 md:w-full md:p-0 md:h-0 my-4 md:mb-6">
+        <div className="h-0">
           <Image src={garisHome} alt="garis pembatas" />
         </div>
         <div
-          className="w-full md:h-screen py-36 sm:py-0 h-fit sm:h-full flex align-center items-center"
+          className="w-full py-24 sm:py-0 h-fit sm:h-screen border flex align-center items-center"
           id="contacts"
         >
           <Contacts themeColor={themeColor} />

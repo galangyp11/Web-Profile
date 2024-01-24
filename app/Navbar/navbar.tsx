@@ -88,7 +88,7 @@ export default function Navbar({
         </div>
         <div className="sm:flex sm:justify-center sm:block hidden">
           <Link href="#contacts">
-            <button className="w-[7.2rem] h-[2.5rem] bg-warna1 px-2 py-1 rounded-full text-warna3 font-semibold hover:scale-110 duration-300">
+            <button className="w-[7.2rem] h-[2.5rem] bg-warna1 px-2 py-1 rounded-full text-warna3 font-semibold hover:scale-110 duration-300 ">
               Contacts
             </button>
           </Link>

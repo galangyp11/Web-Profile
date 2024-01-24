@@ -48,11 +48,11 @@ export default function Homepage({ themeColor }: SetThemeColorType) {
           />
         </div>
       </div>
-      <div className="sm:hidden sm:py-28 mx-auto">
+      <div className="sm:hidden mx-auto">
         <p
           className={`${
             themeColor.status === true ? `text-warna2` : `text-warna5`
-          }text-2xl font-medium`}
+          } text-2xl font-medium`}
         >
           Hi, I&apos;m
         </p>
