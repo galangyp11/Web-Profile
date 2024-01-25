@@ -1,5 +1,8 @@
 import Link from "next/link";
 import { BiLeftArrow, BiRightArrow } from "react-icons/bi";
+import { FaGithub } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+import { FaLinkedin } from "react-icons/fa6";
 import { ThemeColorType } from "../page";
 
 type SetThemeColorType = {
@@ -26,59 +29,46 @@ export default function Contacts({ themeColor }: SetThemeColorType) {
           </div>
         </div>
 
-        <div className="grid grid-row-2 justify-center mr-20">
-          <div>
-            <div className="grid grid-cols-7 w-[15em]">
-              <div className="col-span-2">
-                <p
-                  className={`${
-                    themeColor.status === true ? `text-warna2` : `text-warna5`
-                  } text-lg`}
-                >
-                  Email
-                </p>
-              </div>
-              <div className="col-span-1">
-                <p
-                  className={`${
-                    themeColor.status === true ? `text-warna2` : `text-warna5`
-                  } text-lg`}
-                >
-                  :
-                </p>
-              </div>
-              <div className="col-span-4">
-                <p className="text-warna1 text-lg">galangy11@gmail.com</p>
-              </div>
-            </div>
+        <div className="grid grid-cols-3">
+          <div className="flex justify-end">
+            <a href="https://github.com/galangyp11" target="_blank">
+              <FaGithub
+                className={`${
+                  themeColor.status === true ? `text-warna1` : `text-warna5`
+                } sm:cursor-pointer hover:scale-110 transition ease-in-out duration-300`}
+                size="35"
+              />
+            </a>
           </div>
-
-          <div>
-            <div className="grid grid-cols-7 w-[15em]">
-              <div className="col-span-2">
-                <Link href="https://github.com/galangyp11">
-                  <p
-                    className={`${
-                      themeColor.status === true ? `text-warna2` : `text-warna5`
-                    } text-lg`}
-                  >
-                    Github
-                  </p>
-                </Link>
-              </div>
-              <div className="cols-span-1">
-                <p
-                  className={`${
-                    themeColor.status === true ? `text-warna2` : `text-warna5`
-                  } text-lg`}
-                >
-                  :
-                </p>
-              </div>
-              <div className="col-span-4">
-                <p className="text-warna1 text-lg">galangyp11</p>
-              </div>
-            </div>
+          <div className="grid gird-rows-2 justify-center">
+            <MdEmail
+              className={`${
+                themeColor.status === true ? `text-warna1` : `text-warna5`
+              } sm:cursor-pointer w-fit sm:w-full peer hover:scale-110 transition ease-in-out duration-300`}
+              size="35"
+            />
+            <p
+              className={`${
+                themeColor.status === true
+                  ? `peer-hover:text-warna1`
+                  : `peer-hover:text-warna5`
+              } peer-hover:visible invisible mt-5`}
+            >
+              galangy11@gmail.com
+            </p>
+          </div>
+          <div className="flex justify-start">
+            <a
+              href="https://www.linkedin.com/in/galang-yudi-putra-03729b252/"
+              target="_blank"
+            >
+              <FaLinkedin
+                className={`${
+                  themeColor.status === true ? `text-warna1` : `text-warna5`
+                } sm:cursor-pointer hover:scale-110 transition ease-in-out duration-300`}
+                size="30"
+              />
+            </a>
           </div>
         </div>
       </div>

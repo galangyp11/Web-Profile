@@ -22,22 +22,16 @@ export default function Contents({ themeColor }: SetThemeColorType) {
         <div className="w-full h-full py-24 sm:py-0">
           <HomePage themeColor={themeColor} />
         </div>
-        <div className="h-0">
+        <div className="h-0" id="about">
           <Image src={garisHome} alt="garis pembatas" />
         </div>
-        <div
-          className="w-full h-fit sm:h-full py-24 sm:py-36 mb-10 sm:py-0 sm:my-10 flex align-center items-center"
-          id="about"
-        >
+        <div className="w-full h-fit sm:h-full py-24 sm:py-36 mb-10 sm:py-0 sm:my-10 flex align-center items-center">
           <About themeColor={themeColor} />
         </div>
-        <div className="h-0">
+        <div className="h-0" id="projects">
           <Image src={garisHome} alt="garis pembatas" />
         </div>
-        <div
-          className="w-full h-fit sm:h-full py-24 sm:py-36 mb-10 sm:py-0 sm:my-10 flex align-center items-center"
-          id="projects"
-        >
+        <div className="w-full h-fit sm:h-full py-24 sm:py-36 mb-10 sm:py-0 sm:my-10 flex align-center items-center">
           <Projects themeColor={themeColor} />
         </div>
         <div className="h-0">

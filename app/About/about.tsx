@@ -1,6 +1,7 @@
 import React from "react";
 import { BiLeftArrow, BiRightArrow } from "react-icons/bi";
 import { ThemeColorType } from "../page";
+// import CV from "../../public/CV_Galang-Yudi-Putra_2023.pdf";
 
 type SetThemeColorType = {
   themeColor: ThemeColorType;
@@ -36,6 +37,23 @@ export default function About({ themeColor }: SetThemeColorType) {
           terutama frontend development. Dalam project saya biasa menggunakan
           javascript, ReactJs, NextJs, MySQL, Rest API, Bootstrap dan Tailwind.
         </p>
+      </div>
+      <div className="w-full flex justify-center">
+        <a
+          href="CV_Galang-Yudi-Putra_2023.pdf"
+          download="CV_Galang_Yudi_Putra"
+          target="_blank"
+        >
+          <button
+            className={`${
+              themeColor.status === true
+                ? `text-warna4 hover:bg-warna2 hover:text-warna5 border-warna2`
+                : `text-warna5 hover:bg-bgHome hover:text-warna4 border-bgHome`
+            } rounded-lg border py-2 px-8 text-md font-medium `}
+          >
+            Unduh Cv
+          </button>
+        </a>
       </div>
     </div>
   );
