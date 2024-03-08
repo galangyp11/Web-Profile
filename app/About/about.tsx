@@ -40,7 +40,7 @@ export default function About({ themeColor }: SetThemeColorType) {
       </div>
       <div className="w-full flex justify-center">
         <a
-          href="CV_Galang-Yudi-Putra_2023.pdf"
+          href="CV_Galang-Yudi-Putra.pdf"
           download="CV_Galang_Yudi_Putra"
           target="_blank"
         >
