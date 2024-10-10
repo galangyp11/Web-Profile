@@ -14,10 +14,6 @@ export default function Home() {
     status: true,
   });
 
-  useEffect(() => {
-    console.log("pagetsx" + themeColor.status);
-  }, [themeColor]);
-
   return (
     <div className={themeColor.status === true ? `bg-bgHome` : `bg-bgLight`}>
       <div className="sticky top-0">

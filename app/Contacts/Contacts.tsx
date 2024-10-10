@@ -29,13 +29,13 @@ export default function Contacts({ themeColor }: SetThemeColorType) {
           </div>
         </div>
 
-        <div className="grid grid-rows-3 sm:grid-cols-3">
-          <div className="flex justify-center sm:justify-end">
+        <div className="grid grid-rows-3 lg:grid-cols-3">
+          <div className="flex justify-center lg:justify-end">
             <a href="https://github.com/galangyp11" target="_blank">
               <FaGithub
                 className={`${
                   themeColor.status === true ? `text-warna1` : `text-warna5`
-                } sm:cursor-pointer hover:scale-110 transition ease-in-out duration-300`}
+                } lg:cursor-pointer hover:scale-110 transition ease-in-out duration-300`}
                 size="35"
               />
             </a>
@@ -44,7 +44,7 @@ export default function Contacts({ themeColor }: SetThemeColorType) {
             <MdEmail
               className={`${
                 themeColor.status === true ? `text-warna1` : `text-warna5`
-              } sm:cursor-pointer w-fit w-full peer hover:scale-110 transition ease-in-out duration-300`}
+              } lg:cursor-pointer w-fit w-full peer hover:scale-110 transition ease-in-out duration-300`}
               size="35"
             />
             <p
@@ -52,12 +52,12 @@ export default function Contacts({ themeColor }: SetThemeColorType) {
                 themeColor.status === true
                   ? `peer-hover:text-warna1`
                   : `peer-hover:text-warna5`
-              } peer-hover:visible peer-focus:visible invisible sm:mt-5`}
+              } peer-hover:visible peer-focus:visible invisible lg:mt-5`}
             >
               galangy11@gmail.com
             </p>
           </div>
-          <div className="flex justify-center sm:justify-start">
+          <div className="flex justify-center lg:justify-start">
             <a
               href="https://www.linkedin.com/in/galang-yudi-putra-03729b252/"
               target="_blank"
@@ -65,7 +65,7 @@ export default function Contacts({ themeColor }: SetThemeColorType) {
               <FaLinkedin
                 className={`${
                   themeColor.status === true ? `text-warna1` : `text-warna5`
-                } sm:cursor-pointer hover:scale-110 transition ease-in-out duration-300`}
+                } lg:cursor-pointer hover:scale-110 transition ease-in-out duration-300`}
                 size="30"
               />
             </a>

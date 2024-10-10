@@ -1,0 +1,39 @@
+{
+  "Projects": [
+    {
+      "Judul": "Baca Dongeng Indonesia",
+      "Deksripsi": "Sebuah website yang menampilkan kumpulan dongeng-dongeng dibuat menggunakan React JS + Bootstrap dan Node JS + MySQL. Website ini memiliki animasi dan suara yang membuat membaca dongeng menjadi lebih menarik.",
+      "Thumbnail": "https://res.cloudinary.com/dthdnryp3/image/upload/v1728571186/punya%20galang/fspazep8qu3dqxxvonk1.png",
+      "LinkRepo": "https://github.com/galangyp11/BDI-FE",
+      "LinkHost": "https://bdi-fe-nodb-qs1u14i2v-galangyp11.vercel.app/"
+    },
+    {
+      "Judul": "Toko Online SKW",
+      "Deksripsi": "Sebuah website toko online untuk menjadi wadah transaksi pada suatu sekolah di jawa tengah. Dibuat menggunakan React JS + Bootstrap dan Node JS + MySQL. Terdapat 3 Route pada website ini Pengguna, Penjual, dan Admin yang dibedakan melalui login page.",
+      "Thumbnail": "https://res.cloudinary.com/dthdnryp3/image/upload/v1728571186/punya%20galang/h9yrzslplrjmbzywthsz.png",
+      "LinkRepo": "https://github.com/galangyp11/Web-Toko-SKW",
+      "LinkHost": "https://web-toko-1x4o1libk-galangyp11.vercel.app/"
+    },
+    {
+      "Judul": "KABBAR",
+      "Deksripsi": "KABBAR (Kamus Bahasa Bekasi Anak Al Biruni) adalah sebuah kamus online yang berisi koleksi kata-kata dalam Bahasa Bekasi. Situs ini memungkinkan pengguna untuk menelusuri dan memasukkan kata-kata baru dalam bahasa lokal Bekasi. Karakter maskot 'Albi' dan 'Runi' membantu memperkenalkan fitur-fitur interaktif. Webiste ini dibuat menggunakan Nextjs dan Tailwind dengan MongoDB (kode akses untuk uji coba: 1231)",
+      "Thumbnail": "https://res.cloudinary.com/dthdnryp3/image/upload/v1728571386/punya%20galang/vii4oklcfaib3s8lrj4g.png",
+      "LinkRepo": "",
+      "LinkHost": "https://kabbar.vercel.app/"
+    },
+    {
+      "Judul": "Honda BAM",
+      "Deksripsi": "Honda BAM (Bumen Abadi Motor) adalah situs web resmi dealer motor Honda yang menyediakan informasi tentang berbagai produk motor Honda seperti tipe matic, sport, dan cub. Selain itu, situs ini juga menawarkan berbagai promo terkini dan menyediakan layanan kontak, termasuk chat langsung dan kontak melalui WhatsApp untuk kemudahan pelanggan. Webiste ini dibuat menggunakan Nextjs dan Tailwind dengan MongoDB. Project ini dikerjakan bersama dengan kolega saya",
+      "Thumbnail": "https://res.cloudinary.com/dthdnryp3/image/upload/v1728571498/punya%20galang/q3bs3t6gjowz7rrypfyg.png",
+      "LinkRepo": "https://github.com/Ertilu/honda-ojan",
+      "LinkHost": "honda-bam.com"
+    },
+    {
+      "Judul": "Website Top Up Diamonds Mobile Legends",
+      "Deksripsi": " Sebuah website untuk melakukan top up diamonds pada game MobileLegends. Dibuat menggunakan React JS + Bootstrap terintegrasi dengan apigames sehingga dapat cek akun melalui Id dan Server. Tersedia dalam tampilan dekstop dan mobile",
+      "Thumbnail": "https://res.cloudinary.com/dthdnryp3/image/upload/v1728571762/punya%20galang/peq7aqor0kkpe3zje3z3.png",
+      "LinkRepo": "https://github.com/galangyp11/TopUp-DM-MLBB",
+      "LinkHost": "https://kadal-store.vercel.app/#/"
+    }
+  ]
+}

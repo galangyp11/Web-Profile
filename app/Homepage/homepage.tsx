@@ -9,8 +9,8 @@ type SetThemeColorType = {
 
 export default function Homepage({ themeColor }: SetThemeColorType) {
   return (
-    <div className=" sm:grid sm:grid-cols-2 flex flex-col h-full sm:py-24">
-      <div className="sm:block hidden w-full h-full sm:py-28 ">
+    <div className=" lg:grid lg:grid-cols-2 flex flex-col h-full lg:py-24 ">
+      <div className="lg:block hidden w-full h-full lg:py">
         <p
           className={`${
             themeColor.status === true ? `text-warna2` : `text-warna5`
@@ -20,7 +20,7 @@ export default function Homepage({ themeColor }: SetThemeColorType) {
         </p>
         <p className="text-warna1 text-5xl font-semibold">Galang Yudi Putra</p>
       </div>
-      <div className="sm:flex hidden w-full h-full justify-end py-[5rem]">
+      <div className="lg:flex hidden w-full h-full justify-end py-[5rem]">
         <div
           className={`${
             themeColor.status === true ? `bg-warna3` : `bg-warna6`
@@ -37,7 +37,7 @@ export default function Homepage({ themeColor }: SetThemeColorType) {
           />
         </div>
       </div>
-      <div className="sm:hidden w-full h-fit p-0">
+      <div className="lg:hidden w-full h-fit p-0">
         <div className="w-[16rem] h-[16rem] rounded-full bg-warna3 overflow-hidden p-4 mx-auto">
           <Image
             src={foto}
@@ -48,7 +48,7 @@ export default function Homepage({ themeColor }: SetThemeColorType) {
           />
         </div>
       </div>
-      <div className="sm:hidden mx-auto">
+      <div className="lg:hidden mx-auto">
         <p
           className={`${
             themeColor.status === true ? `text-warna2` : `text-warna5`

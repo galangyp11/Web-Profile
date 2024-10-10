@@ -10,7 +10,7 @@ type SetThemeColorType = {
 export default function About({ themeColor }: SetThemeColorType) {
   return (
     <div>
-      <div className="flex justify-center items-center h-10 sm:h-auto my-8">
+      <div className="flex justify-center items-center h-10 lg:h-auto my-8">
         <div className="grid grid-cols-3">
           <div className="flex justify-center items-center">
             <BiRightArrow className="text-warna3 text-4xl" />

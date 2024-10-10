@@ -25,7 +25,6 @@ export default function Navbar({
   const handleTheme = () => {
     setThemeColor({ status: !themeColor.status });
     setIsOpen(!isOpen);
-    console.log(themeColor);
   };
   return (
     <div
@@ -37,19 +36,19 @@ export default function Navbar({
     >
       <div
         className={`
-      md:max-w-5xl sm:max-w-4xl md:container sm:mx-auto grid sm:grid-cols-9 grid-cols-2 w-full h-20 p-6 sm:px-0 backdrop-blur-sm
+      lg:max-w-5xl lg:max-w-4xl lg:container lg:mx-auto grid lg:grid-cols-9 grid-cols-2 w-full h-20 p-6 lg:px-0 backdrop-blur-sm
       `}
       >
-        <div className="sm:col-span-5 col-span-1 -mt-2">
+        <div className="lg:col-span-5 col-span-1 -mt-2">
           <Link
             href="/"
             onClick={() => setIsOpen(false)}
-            className="sm:text-5xl text-3xl font-semibold text-warna1 cursor-pointer"
+            className="lg:text-5xl text-3xl font-semibold text-warna1 cursor-pointer"
           >
             GYP
           </Link>
         </div>
-        <div className="sm:flex sm:justify-center sm:block sm:col-span-1 hidden">
+        <div className="lg:flex lg:justify-center lg:block lg:col-span-1 hidden">
           {themeColor.status === true ? (
             <MdLightMode
               size="30"
@@ -66,7 +65,7 @@ export default function Navbar({
             />
           )}
         </div>
-        <div className="sm:flex sm:justify-center sm:block sm:col-span-1 hidden">
+        <div className="lg:flex lg:justify-center lg:block lg:col-span-1 hidden">
           <Link
             href="#about"
             className={`${
@@ -76,7 +75,7 @@ export default function Navbar({
             About
           </Link>
         </div>
-        <div className="sm:block hidden sm:flex sm:justify-center">
+        <div className="lg:block hidden lg:flex lg:justify-center">
           <Link
             href="#projects"
             className={`${
@@ -86,14 +85,14 @@ export default function Navbar({
             Projects
           </Link>
         </div>
-        <div className="sm:flex sm:justify-center sm:block hidden">
+        <div className="lg:flex lg:justify-center lg:block hidden">
           <Link href="#contacts">
             <button className="w-[7.2rem] h-[2.5rem] bg-warna1 px-2 py-1 rounded-full text-warna3 font-semibold hover:scale-110 duration-300 ">
               Contacts
             </button>
           </Link>
         </div>
-        <div className="sm:hidden col-span-1 flex justify-end">
+        <div className="lg:hidden col-span-1 flex justify-end">
           <div
             className={`${
               isOpen === false

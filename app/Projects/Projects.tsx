@@ -1,8 +1,6 @@
-import ProjectBDI from "./Project components/Project-BDI";
-import ProjectSKW from "./Project components/Project-SKW";
-import ProjectBlogNEXT from "./Project components/Project-BlogNEXT";
-import ProjectTopUpDmML from "./Project components/Project-TopUpDmML";
-import React from "react";
+import Project from "./Project components/Project";
+import React, { useState } from "react";
+import ProjectsJson from "./Projects.json";
 import Link from "next/link";
 import { BiLeftArrow, BiRightArrow } from "react-icons/bi";
 import { ThemeColorType } from "../page";
@@ -14,7 +12,7 @@ type SetThemeColorType = {
 export default function Projects({ themeColor }: SetThemeColorType) {
   return (
     <div>
-      <div className="flex justify-center items-center h-10 sm:h-auto my-8">
+      <div className="flex justify-center items-center h-10 lg:h-auto my-8">
         <div className="grid grid-cols-3">
           <div className=" flex justify-center items-center">
             <BiRightArrow className="text-warna3 text-4xl" />
@@ -29,15 +27,13 @@ export default function Projects({ themeColor }: SetThemeColorType) {
           </div>
         </div>
       </div>
-      <div className="mt-24 mb-12">
-        <ProjectBDI themeColor={themeColor} />
-      </div>
-      <div className="my-12">
-        <ProjectSKW themeColor={themeColor} />
-      </div>
-      <div className="my-12">
-        <ProjectTopUpDmML themeColor={themeColor} />
-      </div>
+      {ProjectsJson.Projects.map((data, index) => {
+        return (
+          <div className="my-12" key={index}>
+            <Project themeColor={themeColor} data={data} />
+          </div>
+        );
+      })}
       <div className="flex justify-center">
         <p className="text-sm text-warna2">
           Ada beberapa projek yang tidak saya hosting hanya disimpan di Github.
