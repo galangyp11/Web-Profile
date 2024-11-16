@@ -18,7 +18,7 @@
       "Judul": "KABBAR",
       "Deksripsi": "KABBAR (Kamus Bahasa Bekasi Anak Al Biruni) adalah sebuah kamus online yang berisi koleksi kata-kata dalam Bahasa Bekasi. Situs ini memungkinkan pengguna untuk menelusuri dan memasukkan kata-kata baru dalam bahasa lokal Bekasi. Karakter maskot 'Albi' dan 'Runi' membantu memperkenalkan fitur-fitur interaktif. Webiste ini dibuat menggunakan Nextjs dan Tailwind dengan MongoDB (kode akses untuk uji coba: 1231)",
       "Thumbnail": "https://res.cloudinary.com/dthdnryp3/image/upload/v1728571386/punya%20galang/vii4oklcfaib3s8lrj4g.png",
-      "LinkRepo": "",
+      "LinkRepo": "https://github.com/galangyp11/Terjemah",
       "LinkHost": "https://kabbar.vercel.app/"
     },
     {
